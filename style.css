@@ -40,8 +40,8 @@ section {
   justify-content: space-around;
   margin-bottom: 25px;
 }
-.btn-lg{
-    margin-top: 10px;
+.btn-lg {
+  margin-top: 10px;
 }
 .btn {
   border-radius: 18px;
@@ -124,6 +124,7 @@ section {
   padding-top: 10px;
 }
 .titulo-secundario {
+  font-size: 2em;
   text-align: center;
   font-weight: bold;
 }
@@ -147,6 +148,7 @@ section {
   align-content: center;
 }
 .item {
+  width: 250px;
   margin: 25px;
   display: flex;
   flex-wrap: wrap;
@@ -163,11 +165,11 @@ section {
 .celda {
   display: flex;
   justify-content: end;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-.celda-larga{
-    display: flex;
-    justify-content: center;
+.celda-larga {
+  display: flex;
+  justify-content: center;
 }
 .titulo-pie {
   text-align: center;
@@ -182,10 +184,12 @@ footer {
 }
 .celda label {
   margin-right: 10px;
+  font-size: 1.6em;
 }
 .celda input {
   border-radius: 0.5rem;
-  padding: 5px;
+  padding: 10px;
+  font-size: 1.6em;
 }
 form {
   display: flex;
@@ -194,8 +198,7 @@ form {
 }
 .msj {
 }
-.btn-container{
-    display: flex;
-    justify-content: center;
+.btn-container {
+  display: flex;
+  justify-content: center;
 }
-
