@@ -1,0 +1,201 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
+.contenedor {
+}
+.encabezado {
+  display: flex;
+}
+.img-logo-main {
+  width: 4%;
+  margin-right: 10px;
+}
+.titulo-logo {
+  font-size: 3em;
+}
+section {
+  padding: 5px;
+}
+.principal {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.lado-1 {
+  flex: 1;
+  width: 70%;
+}
+.titulo-principal {
+  font-size: 10em;
+  text-align: center;
+}
+.subtitulo {
+  font-size: 2.5em;
+  text-align: center;
+}
+.botonera {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+.btn-lg{
+    margin-top: 10px;
+}
+.btn {
+  border-radius: 18px;
+  height: 60px;
+  width: 30%;
+  font-size: 1.5em;
+}
+.icono-btn {
+  width: 20px;
+}
+
+.texto-button {
+}
+.btn-negativo {
+}
+.btn-positivo {
+  background-color: black;
+  color: white;
+}
+.bi-arrow-up-right {
+  margin-right: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .lado-2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .img-woman {
+    width: 20%;
+  }
+  .lado-2 {
+    flex: 1;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .img-logo-main {
+    width: 20%;
+  }
+  .titulo-principal {
+    font-size: 5em;
+    text-align: center;
+  }
+  .subtitulo {
+    font-size: 2em;
+    text-align: center;
+  }
+  .btn {
+    border-radius: 18px;
+    height: 50px;
+    width: 40%;
+    font-size: 1em;
+  }
+  .titulo-logo {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 701px) {
+}
+
+.fondo {
+  position: relative;
+  width: 150vw;
+  height: inherit;
+  z-index: 2;
+  overflow: hidden;
+}
+.circulo {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.seccion-oscuro {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+.titulo-secundario {
+  text-align: center;
+  font-weight: bold;
+}
+.soluciones-en-texto {
+  text-decoration: underline;
+}
+.contenedor-acciones {
+  display: flex;
+  margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item-fondo {
+  background-color: aliceblue;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.item {
+  margin: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.resumen {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.icon-max {
+  width: 100px;
+}
+
+.celda {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+}
+.celda-larga{
+    display: flex;
+    justify-content: center;
+}
+.titulo-pie {
+  text-align: center;
+  font-size: 1.2em;
+}
+.img-black {
+  color: white;
+  width: 30px;
+}
+footer {
+  padding-bottom: 10px;
+}
+.celda label {
+  margin-right: 10px;
+}
+.celda input {
+  border-radius: 0.5rem;
+  padding: 5px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.msj {
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
