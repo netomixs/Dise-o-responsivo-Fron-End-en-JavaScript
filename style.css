@@ -53,13 +53,22 @@ section {
   width: 20px;
 }
 
-.texto-button {
-}
 .btn-negativo {
+  background-color: rgb(216, 216, 216);
+  color: black;
+}
+.btn-negativo:hover {
+  color: white;
+  background-color: black;
+pointer-events: fill;
 }
 .btn-positivo {
   background-color: black;
   color: white;
+}
+.btn-positivo:hover {
+  background-color: white;
+  color: black;
 }
 .bi-arrow-up-right {
   margin-right: 5px;
@@ -68,8 +77,15 @@ section {
   .lado-2 {
     display: none;
   }
+  .fondo{
+    display: none;
+  }
+  .titulo-principal {
+    font-size: 5em;
+    text-align: center;
+  }
 }
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1000px) {
   .img-woman {
     width: 20%;
   }
@@ -80,10 +96,29 @@ section {
     justify-content: center;
   }
 }
-@media screen and (max-width: 700px) {
-  .img-logo-main {
-    width: 20%;
+@media screen and (max-width: 1200px)and (min-width: 700px)  {
+  .img-woman {
+    width: 30%;
   }
+  .lado-2 {
+    flex: 1;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  
+}
+@media screen and (max-width: 950px)and (min-width: 700px) {
+  .btn {
+    border-radius: 18px;
+    height: 50px;
+    width: 45%;
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 700px) {
+
+ 
   .titulo-principal {
     font-size: 5em;
     text-align: center;
@@ -98,30 +133,39 @@ section {
     width: 40%;
     font-size: 1em;
   }
+
   .titulo-logo {
     font-size: 2em;
   }
-}
-@media screen and (min-width: 701px) {
+
 }
 
-.fondo {
-  position: relative;
-  width: 150vw;
-  height: inherit;
-  z-index: 2;
-  overflow: hidden;
+@media screen and (min-width: 701px) {
+  .fondo {
+    position: relative;
+    width: 100vw;
+    height: 1vh;
+    z-index: -200;
+   
+  }
+  .circulo {
+    width: 80vh;
+    height: 80vh;
+    background-color: #d9d9d9;
+    position: absolute;
+    border-radius: 100rem;
+    bottom:-40vh;
+    right: -40vh;
+  }
 }
-.circulo {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+
 .seccion-oscuro {
   background-color: black;
   color: white;
   padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+ 
 }
 .titulo-secundario {
   font-size: 2em;
@@ -165,7 +209,8 @@ section {
 .celda {
   display: flex;
   justify-content: end;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  width: 100%;
 }
 .celda-larga {
   display: flex;
@@ -181,24 +226,97 @@ section {
 }
 footer {
   padding-bottom: 10px;
+  padding-top: 50px;
 }
 .celda label {
   margin-right: 10px;
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 .celda input {
   border-radius: 0.5rem;
   padding: 10px;
-  font-size: 1.6em;
+  font-size: 1.2em;
+  width: 70%;
 }
-form {
+ 
+.form-inter{
+  width: 45%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-right: 10%;
+ 
+}
+form{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
+@media screen  and (min-width: 769px)  and (max-width: 1493px){
+  .form-inter{
+    width: 100%;
+    
+  }
+  .celda {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .celda input {
+    border-radius: 0.5rem;
+    padding: 10px;
+    font-size:1em;
+    width: 100%;
+ 
+  }
+}
+@media screen  and (max-width: 768px) {
+  .form-inter{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    width: 100%;
+  }
+  .celda {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .celda input {
+    border-radius: 0.5rem;
+    padding: 10px;
+    font-size:1em;
+    width: 100%;
+ 
+  }
+ 
+}
+
 .msj {
+  height: 100px;
+
 }
 .btn-container {
   display: flex;
   justify-content: center;
+  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
+.btn-lg {
+  border-radius: 18px;
+  height: 50px;
+  width:50%;
+  font-size: 1.5em;
+}
+.btn-lg:hover {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+ 
+ 
