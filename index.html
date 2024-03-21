@@ -55,7 +55,9 @@
                 </div>
             </div>
 
-            <div class="fondo"><div class="circulo"></div></div>
+            <div class="fondo">
+                <div class="circulo"></div>
+            </div>
         </section>
         <section class="seccion-oscuro">
             <h3 class="titulo-secundario">
@@ -100,28 +102,51 @@
             <form action="" method="post">
                 <div class="form-inter">
                     <div class="celda">
-                        <label for="nombre">Nombre</label>
-                        <input id="nombre" type="text" name="nombre" placeholder="Nombre">
+
+                        <div class="contenedor">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text" name="nombre" placeholder="Nombre" autofocus>
+                            <p id="nombre-error" class="info-error"> </p>
+                        </div>
+
                     </div>
                     <div class="celda">
-                        <label for="apellido">Apellido</label>
-                        <input id="apellido" type="text" name="apellido" placeholder="Apellido(s)">
+                        <div class="contenedor">
+                            <label for="apellido">Apellido</label>
+                            <input id="apellido" type="text" name="apellido" placeholder="Apellido(s)" autofocus>
+                            <p id="apellido-error" class="info-error"> </p>
+                        </div>
+
                     </div>
                     <div class="celda">
-                        <label for="telefono">Telefono</label>
-                        <input id="telefono" type="tel" name="telefono" placeholder="xxx-xxx-xxxx">
+                        <div class="contenedor">
+                            <label for="telefono">Telefono</label>
+                            <input id="telefono" type="tel"  min="10" maxlength="10" name="telefono" placeholder="xxx-xxx-xxxx">
+                            <p id="telefono-error"   class="info-error"> </p>
+                        </div>
+
                     </div>
                     <div class="celda">
-                        <label for="correo">Correo electronico</label>
-                        <input id="correo" type="email" name="correo" placeholder="ejemplo@dominio.com">
+
+                        <div class="contenedor"><label for="correo">Correo electronico</label>
+                            <input id="correo" type="email" name="correo" placeholder="ejemplo@dominio.com">
+                            <p id="correo-error" class="info-error"> </p>
+                        </div>
+
                     </div>
                     <div class="celda">
-                        <label for="mensaje">Mensaje</label>
-                        <input class="msj" id="mensaje" type="text" name="mensaje" placeholder="Solucion que buscas">
+                        <div class="contenedor">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea class="msj" rows="4" cols="50"  id="mensaje" type="text"  name="mensaje"
+                                placeholder="Solucion que buscas"></textarea>
+                                
+                            <p id="mensaje-error" class="info-error"> </p>
+                        </div>
+
                     </div>
                 </div>
                 <div class="btn-container">
-                    <button type="button" class="btn-lg   btn-negativo ">
+                    <button type="button" class="btn-lg   btn-negativo " onclick="validar()">
                         Enviar
                     </button>
                 </div>
@@ -143,5 +168,6 @@
         </div>
     </footer>
 </body>
+<script src="/script.js"></script>
 
 </html>
