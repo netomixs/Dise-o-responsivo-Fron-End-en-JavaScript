@@ -68,7 +68,7 @@ function validar() {
       alert("Mensaje enviado")
   }
 }
- 
+ //Se usa esta funcion para quitar las clases usadas para decorar los input por error o validacion
 function limpiar() {
   var elementos = document.querySelectorAll("input");
   for (const iterator of elementos) {
