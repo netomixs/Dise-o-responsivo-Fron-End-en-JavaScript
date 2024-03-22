@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones Creativas</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -20,7 +23,7 @@
             <h1 class="titulo-logo">Soluciones creativas</h1>
         </div>
         <section>
-            <div class="principal">
+            <div class="container d-flex justify-content-center">
 
 
                 <div class="lado-1">
@@ -28,17 +31,16 @@
                     <p class="subtitulo">
                         Disponga de soluciones tecnologicas enfocadas en altecer su empresa
                     </p>
-                    <div class="botonera">
-                        <button type="button" class="btn btn-positivo">
+                    <div class="container d-flex justify-content-center flex-wrap">
+                        <button type="button" class="btn btn-dark m-3 w-75">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 class="bi bi-arrow-up-right icono-btn" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z" />
                             </svg>
-                            <span class="text-button">Contacto</span>
-
+                            Contacto
                         </button>
-                        <button type=" button" class="btn btn-negativo">
+                        <button type="button" class="btn btn-light m-3 w-75">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                 class="bi bi-card-text icono-btn" viewBox="0 0 16 16">
                                 <path
@@ -46,9 +48,11 @@
                                 <path
                                     d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8m0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
                             </svg>
-                            <span class="texto-button">Conocer mas</span>
+                            Conocer mas
                         </button>
                     </div>
+
+
                 </div>
                 <div class="lado-2">
                     <img src="/img/woman.svg" class="img-woman" alt="">
@@ -99,58 +103,56 @@
         </section>
         <section class="seccion-oscuro">
             <h3 class="titulo-secundario"> Pongase en contacto con nosotros</h3>
-            <form action="" method="post">
-                <div class="form-inter">
-                    <div class="celda">
+            <div class="container mt-5">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                        <div class="invalid-feedback"  id="nombre-feedback">
+                            Completa este campo
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellido" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellido">
+                        <div class="invalid-feedback"  id="apellido-feedback">
+                            Completa este campo
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" placeholder="ejemplo@dominio.com">
+                        <div class="invalid-feedback" id="correo-feedback">
+                            Completa este campo
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="text" class="form-control" id="telefono" placeholder="xxx-xxx-xxxx">
+                        <div class="invalid-feedback" id="telefono-feedback">
+                            Completa este campo
+                          </div>
+                    </div>
+                    <div class="col-12 ">
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                            <div class="invalid-feedback" id="mensaje-feedback">
+                                Completa este campo
+                              </div>
+                          </div>
+                       
+                    </div>
 
-                        <div class="contenedor">
-                            <label for="nombre">Nombre</label>
-                            <input id="nombre" type="text" name="nombre" placeholder="Nombre" autofocus>
-                            <p id="nombre-error" class="info-error"> </p>
+                    <div class="col-12 mt-5">
+                        <div class=" d-grid gap-2">
+                            <button type="button" onclick="validar() " class="btn btn-light w-100">Enviar</button>
                         </div>
 
                     </div>
-                    <div class="celda">
-                        <div class="contenedor">
-                            <label for="apellido">Apellido</label>
-                            <input id="apellido" type="text" name="apellido" placeholder="Apellido(s)" autofocus>
-                            <p id="apellido-error" class="info-error"> </p>
-                        </div>
+                </form>
+            </div>
 
-                    </div>
-                    <div class="celda">
-                        <div class="contenedor">
-                            <label for="telefono">Telefono</label>
-                            <input id="telefono" type="tel"  min="10" maxlength="10" name="telefono" placeholder="xxx-xxx-xxxx">
-                            <p id="telefono-error"   class="info-error"> </p>
-                        </div>
-
-                    </div>
-                    <div class="celda">
-
-                        <div class="contenedor"><label for="correo">Correo electronico</label>
-                            <input id="correo" type="email" name="correo" placeholder="ejemplo@dominio.com">
-                            <p id="correo-error" class="info-error"> </p>
-                        </div>
-
-                    </div>
-                    <div class="celda">
-                        <div class="contenedor">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea class="msj" rows="4" cols="50"  id="mensaje" type="text"  name="mensaje"
-                                placeholder="Solucion que buscas"></textarea>
-                                
-                            <p id="mensaje-error" class="info-error"> </p>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="btn-container">
-                    <button type="button" class="btn-lg   btn-negativo " onclick="validar()">
-                        Enviar
-                    </button>
-                </div>
-            </form>
         </section>
     </div>
     <footer class="seccion-oscuro">
@@ -169,5 +171,8 @@
     </footer>
 </body>
 <script src="/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
 </html>

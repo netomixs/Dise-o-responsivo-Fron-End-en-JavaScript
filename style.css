@@ -206,6 +206,7 @@ pointer-events: fill;
 .resumen {
   font-weight: bold;
   font-size: 1.2em;
+  text-align: center;
 }
 .icon-max {
   width: 100px;
@@ -236,7 +237,7 @@ footer {
   padding-bottom: 10px;
   padding-top: 50px;
 }
- label {
+ /*label {
   margin-right: 10px;
   font-size: 1.2em;
   display: flex;
@@ -255,23 +256,18 @@ textarea
   padding: 10px;
   font-size: 1.2em;
   width: 70%;
-}
-.form-inter{
+}*/
+/*.form-inter{
   width: 60%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
  
  
-}
-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
+}*/
  
-@media screen  and (max-width: 768px) {
+ 
+/*@media screen  and (max-width: 768px) {
   .form-inter{
     display: flex;
     justify-content: center;
@@ -285,7 +281,7 @@ form{
     margin-bottom: 20px;
     flex-wrap: wrap;
   }
- input {
+  input {
     border-radius: 0.5rem;
     padding: 10px;
     font-size:1em;
@@ -301,7 +297,7 @@ form{
 }
  
 }
-
+*/
 .msj {
   height: 100px;
   display: flex;
