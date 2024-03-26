@@ -41,7 +41,7 @@ function validar() {
     correct++;
   } else {
     apellidoInfo.innerText = "Completa este campo";
-    apellidoInfo.classList.add("error-message");
+ 
     apellido.classList.add("is-invalid");
   }
   //Valida si el telefono tiene 10 caracteres y si esos caracteres son numericos
@@ -52,17 +52,17 @@ function validar() {
     //En caso de que no se ingresa el numer correcto de digitos
   } else if (telefono.value.length != 10 && telefono.value.length != 0) {
     telefonoInfo.innerText = "Telefono no valido";
-    telefonoInfo.classList.add("error-message");
+ 
     telefono.classList.add("is-invalid");
     //Si el telefono es vacio
   } else if (telefono.value.length == 0) {
     telefonoInfo.innerText = "Completa este campo";
-    telefonoInfo.classList.add("error-message");
+   
     telefono.classList.add("is-invalid");
     //Si el telefono tiene caracteres no numericos
   } else if (/[^0-9]/.test(telefono.value)) {
     telefonoInfo.innerText = "Ingresa un telefono valido";
-    telefonoInfo.classList.add("error-message");
+ 
     telefono.classList.add("is-invalid");
   }
   //Valida si el correo es mayor a 2 y que cumpla con la estructura de un correo
@@ -72,7 +72,7 @@ function validar() {
     correct++;
   } else {
     correoInfo.innerText = "Ingresa un correo valido";
-    correoInfo.classList.add("error-message");
+    
     correo.classList.add("is-invalid");
   }
   //Valida si hay un mensaje con mas de 2 caarcteres
@@ -82,7 +82,7 @@ function validar() {
     correct++;
   } else {
     mensajeInfo.innerText = "Completa este campo";
-    mensajeInfo.classList.add("error-message");
+ 
     mensaje.classList.add("is-invalid");
   }
   //Si todas las entradas son correctas se notifica que se envia el formulario
